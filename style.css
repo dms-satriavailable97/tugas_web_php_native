@@ -1,0 +1,800 @@
+/* === Reset Dasar === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #333;
+  padding: 20px;
+}
+
+section {
+  text-align: center;
+}
+
+/* === Header === */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* === Video === */
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  display: block;
+}
+
+/* === Tombol Reusable === */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #004999;
+}
+
+/* === Card Reusable === */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.featured-image {
+    width: 100%;             
+    aspect-ratio: 2 / 1;    /* Paksa rasio 16:9 */
+    object-fit: cover;       /* Ini "auto-crop"-nya */
+    background-color: #eee;
+    border-radius: 8px;      /* Bikin sudutnya melengkung */
+    margin-bottom: 15px;     /* Jarak ke judul di bawahnya */
+}
+
+.card-featured {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+/* === Donasi List (Grid) === */
+.donasi-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.donasi-list img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* === Testimoni Section === */
+.testimoni {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.testi-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testi-card .profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #0066cc;
+  color: #fff;
+  border-radius: 12px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (min-width: 768px) {
+  body {
+    padding: 40px 80px;
+  }
+
+  .donasi-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimoni {
+    flex-direction: row;
+  }
+}
+
+/* =================================
+   === DARK MODE (PALET BARU) ===
+   ================================= */
+
+/* Warna dasar baru yang lebih modern */
+body.dark-mode {
+  background-color: #121826;  /* Abu-abu kebiruan (sangat gelap) */
+  color: #D1D5DB;            /* Teks abu-abu muda (bukan putih murni) */
+}
+
+/* Judul-judul */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode .nav-logo {
+  color: #F9FAFB; /* Putih terang untuk judul */
+}
+
+/* Teks paragraf sekunder */
+body.dark-mode p,
+body.dark-mode .stat-desc,
+body.dark-mode .section-header p {
+  color: #D1D5DB;
+}
+
+/* Semua 'permukaan' seperti kartu, nav, form */
+body.dark-mode .card,
+body.dark-mode .testi-card,
+body.dark-mode .navbar,
+body.dark-mode .form-container,
+body.dark-mode .dashboard-content-full,
+body.dark-mode .program-card,
+body.dark-mode .detail-container,
+body.dark-mode .feature-card,
+body.dark-mode .login-form,
+body.dark-mode .stat-card,
+body.dark-mode .activity-item,
+body.dark-mode .program-card {
+  background-color: #1F2937;  /* Abu-abu kebiruan (lebih muda) */
+  border: 1px solid #374151; /* Border tipis untuk pemisah */
+  color: #D1D5DB;
+}
+
+/* Link */
+body.dark-mode a {
+  color: #60A5FA; /* Biru muda untuk link */
+}
+body.dark-mode a:hover {
+  color: #93C5FD;
+}
+
+/* Tombol Primary */
+body.dark-mode .btn-primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border: none;
+}
+body.dark-mode .btn-primary:hover {
+  background-color: #2563EB;
+}
+
+/* Tombol Secondary (Termasuk Dark Mode Toggle) */
+body.dark-mode .btn-secondary {
+  background-color: #374151; /* Abu-abu tua */
+  color: #F9FAFB;
+  border: none;
+}
+body.dark-mode .btn-secondary:hover {
+  background-color: #4B5563;
+}
+
+/* Footer */
+body.dark-mode footer.footer {
+  background-color: #1F2937; /* Samakan dengan kartu */
+  border-top: 1px solid #374151;
+}
+body.dark-mode footer a {
+  color: #ffd700; /* Tetap pakai kuning untuk referensi */
+}
+
+/* Input form */
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .search-form input {
+  background-color: #374151;
+  border-color: #4B5563;
+  color: #F9FAFB;
+}
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus,
+body.dark-mode .search-form input:focus {
+  border-color: #3B82F6;
+  outline: none;
+}
+
+/* Warna khusus navigasi */
+body.dark-mode .nav-menu li a {
+  color: #D1D5DB;
+}
+body.dark-mode .nav-menu li a:hover {
+  background-color: #374151;
+  color: #F9FAFB;
+}
+
+/* === Header: Judul Tengah & Tombol Login di Kanan Atas === */
+.header-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.header-container .site-title {
+  font-size: 1.8em;
+  color: #0066cc;
+  margin: 0;
+}
+
+/* Tombol Login di pojok kanan atas */
+.header-container .login-btn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: #0066cc;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.header-container .login-btn:hover {
+  background-color: #004999;
+}
+
+/* === Navigasi === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: #f0f0f0;
+  color: #0066cc;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dark Mode untuk Navigasi */
+body.dark-mode .navbar {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode .nav-menu li a {
+  color: #f5f5f5;
+}
+
+body.dark-mode .nav-menu li a:hover {
+  background-color: #3c3c3c;
+  color: #3399ff;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+}
+
+body.dark-mode .btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+
+/* Responsive Navigasi */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  cursor: pointer; /* Tambahkan ini */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* === Login Container === */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h1 {
+  margin-bottom: 30px;
+  color: #0066cc;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.login-info {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* === Dashboard Styles === */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #0066cc;
+  margin: 10px 0;
+}
+
+.stat-desc {
+  color: #666;
+  font-size: 14px;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.content-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+  color: #0066cc;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.program-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+}
+
+.program-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #0066cc;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.activity-item {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.activity-time {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.dashboard-actions {
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.success-message {
+  color: #155724;
+  background: #d4edda;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+
+/* === Section Styles === */
+.section {
+  margin-bottom: 80px;
+  clear: both;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.2em;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Features Grid === */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #0066cc;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+/* === CTA Section === */
+.cta-section {
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cta-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-highlight {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* === Footer === */
+.footer {
+  background: #2c3e50;
+  color: white;
+  padding: 50px 0 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+body.dark-mode .feature-card {
+  background: #2c2c2c;
+  color: #f5f5f5;
+}
+
+body.dark-mode .section-header p {
+  color: #ccc;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+
+  
+  .section-header h2 {
+    font-size: 1.8em;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.donasi-list .card img {
+    width: 100%;             /* 1. Paksa lebar gambar 100% dari kartu */
+    aspect-ratio: 16 / 9;    /* 2. Paksa rasio aspek (lebar:tinggi) jadi 16:9 */
+    object-fit: cover;       /* 3. Ini "auto-crop"-nya. Gambar akan zoom & crop */
+    background-color: #eee;  /* 4. Warna placeholder jika gambar gagal dimuat */
+}
+
+/* Ini untuk gambar di halaman detail (detail.php) */
+.detail-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;    /* Samakan rasionya */
+    object-fit: cover;
+    background-color: #eee;
+    /* Hapus 'max-height: 400px' jika ada di style inline */
+}
