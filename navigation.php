@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <li><a href="index.php#beranda">Beranda</a></li>
         <li><a href="index.php#tentang">Tentang Kami</a></li>
         <li><a href="index.php#donasi">Program Donasi</a></li>
-        <li><a href="index.php#testimoni">Testimoni</a></li>
+        <li><a href="index.php#testimoni">Donatur</a></li>
         <li><a href="index.php#kontak">Kontak</a></li>
     </ul>
     
