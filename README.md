@@ -6,6 +6,10 @@ Aplikasi ini mencakup halaman publik untuk melihat program donasi dan area admin
 
 ---
 
+* **Created by**: Dimas Elang Satria
+* **NIM**: 2109106041
+* **Kelas**: Informatika A 2024
+
 ## Fitur Tersedia
 
 Aplikasi ini memenuhi semua spesifikasi teknis dan fitur tambahan yang telah dibuat:
