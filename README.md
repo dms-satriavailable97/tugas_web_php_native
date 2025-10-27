@@ -7,7 +7,7 @@ Aplikasi ini mencakup halaman publik untuk melihat program donasi dan area admin
 ---
 
 * **Created by**: Dimas Elang Satria
-* **NIM**: 2109106041
+* **NIM**: 2409106027
 * **Kelas**: Informatika A 2024
 
 ## Fitur Tersedia
@@ -18,7 +18,7 @@ Aplikasi ini memenuhi semua spesifikasi teknis dan fitur tambahan yang telah dib
     * Sistem Login & Logout admin menggunakan PHP Session.
     * Semua halaman admin (`dashboard.php`, `kelola_donatur.php`, `tambah.php`, dll.) dilindungi dan akan mengarahkan pengguna ke halaman login jika diakses tanpa sesi.
 
-* **CRUD Program Donasi ***:
+* **CRUD Program Donasi**:
     * **Create**: Form tambah program donasi baru (`tambah.php`).
     * **Read**: Halaman utama (`dashboard.php`) untuk melihat, mencari, dan mem-pagination semua program.
     * **Update**: Form edit data (`edit.php`) dengan *prefill* data lama.
