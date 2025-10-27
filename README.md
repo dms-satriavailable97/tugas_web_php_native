@@ -64,7 +64,7 @@ Aplikasi ini memenuhi semua spesifikasi teknis dan fitur tambahan yang telah dib
 ## Cara Instalasi dan Konfigurasi
 
 1.  **Clone atau Download Proyek**
-    * Unduh file ZIP atau clone repositori ini ke *root directory* server lokal Anda (misal: `C:/laragon/www/POSTTEST_4`).
+    * Unduh file ZIP atau clone repositori ini ke *root directory* server lokal Anda (misal: `C:/laragon/www/tugas_web_crud_php_native`).
 
 2.  **Buat Database**
     * Nyalakan server MySQL Anda (via Laragon atau XAMPP).
