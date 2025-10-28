@@ -143,12 +143,9 @@ tugas_web_crud_php_native/
 │   └── (File gambar program akan tersimpan di sini)
 │
 ├── assets/
-│   ├── donasi.jpg
-│   ├── donasi1.jpg
-│   ├── testi1.png
-│   ├── testi2.png
-│   ├── testi3.png
-│   ├── testi4.jpg
+│   ├── ss1.jpg
+│   ├── ss2.jpg
+│   ├── ss3.png
 │   └── video.mp4
 │
 ├── dashboard.php
