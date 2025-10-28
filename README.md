@@ -125,7 +125,7 @@ Aplikasi ini memenuhi semua spesifikasi teknis dan fitur tambahan yang telah dib
     ```
 
 5.  **Jalankan Aplikasi**
-    * Akses proyek melalui browser Anda (misal: `http://localhost/POSTTEST_4/`).
+    * Akses proyek melalui browser Anda (misal: `http://localhost/tugas_web_crud_php_native/`).
     * Login admin dapat diakses di `/login.php` dengan kredensial:
         * **Username**: `admin`
         * **Password**: `12345`
