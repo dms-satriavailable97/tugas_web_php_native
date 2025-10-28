@@ -133,16 +133,22 @@ Aplikasi ini memenuhi semua spesifikasi teknis dan fitur tambahan yang telah dib
 ---
 
 ## Struktur Folder
-POSTTEST_4/
+```
+tugas_web_crud_php_native/
 ├── config/
 │   └── database.php
-│
 ├── uploads/
 │   ├── donatur/
 │   │   └── (File foto donatur akan tersimpan di sini)
 │   └── (File gambar program akan tersimpan di sini)
 │
 ├── assets/
+│   ├── donasi.jpg
+│   ├── donasi1.jpg
+│   ├── testi1.png
+│   ├── testi2.png
+│   ├── testi3.png
+│   ├── testi4.jpg
 │   └── video.mp4
 │
 ├── dashboard.php
@@ -162,6 +168,7 @@ POSTTEST_4/
 ├── style.css
 ├── tambah.php
 └── tambah_donatur.php
+```
 
 ## Screenshot Aplikasi
 
